@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(){
+    char ch = 'a';
+    while (ch){
+        printf("%d\n", ch);
+        ch--;
+    }
+    printf("End of program\n");
+}
