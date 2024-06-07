@@ -9,8 +9,13 @@ int main(){
     fgets(name, sizeof(name), stdin);
 
     for (i = 0; name[i] != '\0'; i++){
+        if (name[i] == '\n'){ //This block removes the new line added by fgets
+            name[i] = '\0';
+            break;
+        }
+    }
+    for (i = 0; name[i] != '\0'; i++){
         count++;
     }
-    printf("%ld\n", count);
-    
+    printf("%ld\n", count);  
 }
