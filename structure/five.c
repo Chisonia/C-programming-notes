@@ -1,5 +1,5 @@
 #include <stdio.h>
-//Array of structure
+//Pointer to structure
 
 struct student
 {
@@ -10,7 +10,7 @@ struct student
 
 void main(){
     struct student s;
-    struct student *ptr = &s;
+    struct student *ptr = &s; //pointer, pointing to the address of the structure
     
     printf("Enter student details (roll number, name, and marks\n");
     
