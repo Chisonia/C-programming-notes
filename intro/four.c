@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//pre increment
 void main(){
     int y = 10;
     int x = 11;

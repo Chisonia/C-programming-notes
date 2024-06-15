@@ -1,4 +1,5 @@
 #include <stdio.h>
+//precedence
 void main(){
     int a, b, c, d, e;
     a = 18;

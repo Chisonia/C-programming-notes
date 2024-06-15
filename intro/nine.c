@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//using precedence
 void main(){
     int a = 10;
     int b = 11;

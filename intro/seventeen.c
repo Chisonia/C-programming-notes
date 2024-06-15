@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//operators
 void main(){
     int a, b, c;
     a = 3 * 4 % 5 / 2;

@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//operators
 void main(){
     int a = 10, b = 6;
 

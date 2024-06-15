@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//receiving input from user and printing
 void main(){
     int a , b, sum;
     scanf("%d%d", &a, &b);
