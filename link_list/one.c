@@ -49,7 +49,9 @@ int main()
         printf("%d\n", temp->a);// prints the data stored in the node
         temp = temp->next;// stores the address which is stored in pointer next in pointer temp. Then loop goes back to condition to check if temp has any address
         count++;
+        free(temp);
     }
     printf("number of node: %d\n", count);
+    free(new_node);
     return 0;
 }

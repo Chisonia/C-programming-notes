@@ -2,6 +2,7 @@
 #include <stdlib.h>
 //Create a linked list first then
 //insert a node at the beginning of a linked list
+//insert a node at the end of a linked list
 int main()
 {
     struct node
@@ -66,7 +67,33 @@ int main()
     head = new_node;//The head pointer is made to point to new node
 
     temp = head;// temp node is moved back to head to start transversing the linked list
-    printf("list after insertion: \n");// prints the updated linked list
+    printf("list after insertion at the beginning: \n");// prints the updated linked list
+    while (temp != 0)// loop help in printing
+    {
+        printf("%d\n", temp->a);
+        temp = temp->next;
+    }
+
+
+    new_node = (struct node *)malloc(sizeof(struct node));// creating a new node
+    if (new_node == NULL)
+        {
+            printf("Memory allocation failed\n");//handles error allocating memory
+            return 1;
+        }
+    printf("Enter new data\n");// prompts users to enter data to be inserted at the beginning of the linked list
+    scanf("%d", &new_node->a);//receives user input
+    new_node->next = 0;// new node next pointer is initialized to 0
+    temp = head;
+    while (temp->next != 0)
+    {
+        temp = temp->next;
+    }
+    temp->next = new_node;
+
+    temp = head;
+
+    printf("list after insertion at the end: \n");// prints the updated linked list
     while (temp != 0)// loop help in printing
     {
         printf("%d\n", temp->a);
